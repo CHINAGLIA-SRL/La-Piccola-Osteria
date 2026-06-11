@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Nostra Storia — La Piccola Osteria, Rovigo</title>
+<meta name="description" content="La storia de La Piccola Osteria di Rovigo: passione, tradizione e accoglienza autentica.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1E1916">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">La Piccola Osteria<small>Rovigo</small></a>
+    <div class="nav-right">
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="storia.html" aria-current="page">La Nostra Storia</a>
+      <a href="contatti.html">Dove Siamo</a>
+    </nav>
+    <a href="https://search.google.com/local/writereview?placeid=ChIJx1IvjLr5fkcRIJbWQx-Od5Y" target="_blank" rel="noopener" class="nav-recensione"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.3l-5.4 3.3 1.5-6.1L3 10.3l6.2-.5L12 4l2.8 5.8 6.2.5-4.9 4.2 1.5 6.1z"/></svg>Recensione Google</a>
+    <a href="tel:+393515194009" class="nav-prenota"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>Prenota un tavolo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Apri il menu" onclick="document.getElementById('mm').classList.toggle('open')"><span>☰</span></button>
+  </div>
+  <nav class="mobile-menu" id="mm">
+    <a href="index.html">Home</a>
+    <a href="storia.html" aria-current="page">La Nostra Storia</a>
+    <a href="contatti.html">Dove Siamo</a>
+    <a href="https://search.google.com/local/writereview?placeid=ChIJx1IvjLr5fkcRIJbWQx-Od5Y" target="_blank" rel="noopener">Lascia una recensione su Google</a>
+  </nav>
+</header>
+
+<!-- ============ INTESTAZIONE PAGINA ============ -->
+<section class="fondo-nero" style="padding: 70px 0 64px;">
+  <div class="wrap center">
+    <span class="eyebrow su-scuro">Chi siamo</span>
+    <h1 class="sezione-titolo" style="font-size: clamp(2.4rem, 9vw, 4rem);">La Nostra Storia</h1>
+    <div class="fregio"><span class="rombo"></span></div>
+    <p class="testo-tenue" style="max-width: 560px; margin: 0 auto; color: rgba(251,246,236,0.78);">Una passione di famiglia, servita a tavola ogni giorno.</p>
+  </div>
+</section>
+
+<!-- ============ FOTO PRINCIPALE ============ -->
+<section style="padding: 0;">
+  <figure style="margin: 0;">
+    <div class="ph ha-foto" style="aspect-ratio: 16/10;"><img src="images/titolari.jpg" alt="Margherita e Novella, le titolari de La Piccola Osteria" style="object-position: center 30%;"></div>
+    <figcaption style="text-align: center; font-family: var(--display); font-style: italic; font-size: 1.15rem; color: var(--testo-tenue); padding: 14px 20px 0;">Margherita, in cucina · Novella, in sala</figcaption>
+  </figure>
+</section>
+
+<!-- ============ RACCONTO ============ -->
+<section class="fondo-beige">
+  <div class="wrap" style="max-width: 720px;">
+    <div class="intro-testo">
+      <p class="prima">La Piccola Osteria è il frutto di una passione coltivata negli anni: quella per la buona cucina e per l'arte dell'accoglienza. A guidarla sono <strong>Margherita</strong>, che cucina ogni piatto con la cura e la pazienza di una volta, e <strong>Novella</strong>, che accoglie e serve gli ospiti in sala con il sorriso di chi ti fa sentire subito a casa.</p>
+      <p>Insieme, qui a Rovigo, hanno voluto creare un luogo dove sentirsi in famiglia, tra sapori autentici e il calore di una tavola condivisa.</p>
+      <div class="fregio" style="justify-content: flex-start;"><span class="rombo"></span></div>
+      <p style="font-family: var(--display); font-size: 1.5rem; font-style: italic; color: var(--rosso);">«Il segreto è semplice: ingredienti veri, ricette di una volta e il piacere di stare insieme.»</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALORI ============ -->
+<section>
+  <div class="wrap">
+    <div class="griglia-3">
+      <article class="scheda reveal">
+        <div class="ph ha-foto"><img src="images/affettati.jpg" alt="Materie prime"></div>
+        <h3>Materie Prime</h3>
+        <p>Selezioniamo ogni ingrediente con cura, privilegiando il territorio e la stagionalità.</p>
+      </article>
+      <article class="scheda reveal">
+        <div class="ph ha-foto"><img src="images/gnocchi.jpg" alt="Piatto della tradizione"></div>
+        <h3>Tradizione</h3>
+        <p>Ricette tramandate e cucinate con la pazienza di un tempo, senza scorciatoie.</p>
+      </article>
+      <article class="scheda reveal">
+        <div class="ph ha-foto"><img src="images/sala.jpg" alt="La sala"></div>
+        <h3>Famiglia</h3>
+        <p>Accogliamo ogni ospite come un amico, perché a tavola si sta bene insieme.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERIA ============ -->
+<section class="fondo-nero">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow su-scuro">Galleria</span>
+      <h2 class="sezione-titolo">I nostri momenti</h2>
+      <div class="fregio"><span class="rombo"></span></div>
+    </div>
+    <div class="galleria" style="margin-top: 2.4rem;">
+      <div class="ph scuro ha-foto"><img src="images/gnocchi.jpg" alt="Gnocchi"></div>
+      <div class="ph scuro ha-foto"><img src="images/affettati.jpg" alt="Affettati"></div>
+      <div class="ph scuro ha-foto"><img src="images/pappardelle.jpg" alt="Pappardelle"></div>
+      <div class="ph scuro ha-foto"><img src="images/titolari.jpg" alt="Le titolari"></div>
+      <div class="ph scuro ha-foto larga"><img src="images/sala.jpg" alt="La sala"></div>
+      <div class="ph scuro ha-foto"><img src="images/sala-murale.jpg" alt="La sala con murale"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA PRENOTAZIONE ============ -->
+<section class="fondo-rosso banda-cta">
+  <div class="wrap">
+    <span class="eyebrow su-scuro">Vieni a trovarci</span>
+    <h2>Prenota il tuo tavolo</h2>
+    <p class="testo-tenue" style="max-width: 520px; margin: 0 auto;">Saremo felici di accoglierti a Rovigo per una cena all'insegna del gusto e della convivialità.</p>
+    <div class="azioni">
+      <a href="tel:+393515194009" class="btn btn-oro">Chiama ora</a>
+      <a href="contatti.html" class="btn btn-contorno">Dove siamo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand-f">La Piccola Osteria<small>Rovigo</small></div>
+    <nav class="f-link">
+      <a href="index.html">Home</a>
+      <a href="storia.html">La Nostra Storia</a>
+      <a href="contatti.html">Dove Siamo</a>
+    </nav>
+    <p class="f-info">Via Luigi Einaudi, 39 · 45100 Rovigo (RO) · 351 519 4009</p>
+    <p class="f-copy">© 2026 La Piccola Osteria · Tutti i diritti riservati</p>
+  </div>
+</footer>
+
+<!-- ============ BARRA PRENOTAZIONE FISSA (mobile) ============ -->
+<div class="barra-prenota">
+  <a href="tel:+393515194009" class="chiama">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+    Chiama
+  </a>
+</div>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
