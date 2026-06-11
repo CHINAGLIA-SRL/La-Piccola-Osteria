@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Piccola Osteria — Rovigo</title>
+<meta name="description" content="La Piccola Osteria a Rovigo — cucina tradizionale in un'atmosfera calda e accogliente. Prenota il tuo tavolo.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="La Piccola Osteria — Rovigo">
+<meta property="og:description" content="Cucina tradizionale in un'atmosfera calda e accogliente, nel cuore di Rovigo. Prenota il tuo tavolo.">
+<meta property="og:image" content="images/sala.jpg">
+<meta name="theme-color" content="#1E1916">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">La Piccola Osteria<small>Rovigo</small></a>
+    <div class="nav-right">
+    <nav class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="storia.html">La Nostra Storia</a>
+      <a href="contatti.html">Dove Siamo</a>
+    </nav>
+    <a href="https://search.google.com/local/writereview?placeid=ChIJx1IvjLr5fkcRIJbWQx-Od5Y" target="_blank" rel="noopener" class="nav-recensione"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.3l-5.4 3.3 1.5-6.1L3 10.3l6.2-.5L12 4l2.8 5.8 6.2.5-4.9 4.2 1.5 6.1z"/></svg>Recensione Google</a>
+    <a href="tel:+393515194009" class="nav-prenota"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>Prenota un tavolo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Apri il menu" onclick="document.getElementById('mm').classList.toggle('open')"><span>☰</span></button>
+  </div>
+  <nav class="mobile-menu" id="mm">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="storia.html">La Nostra Storia</a>
+    <a href="contatti.html">Dove Siamo</a>
+    <a href="https://search.google.com/local/writereview?placeid=ChIJx1IvjLr5fkcRIJbWQx-Od5Y" target="_blank" rel="noopener">Lascia una recensione su Google</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-slideshow">
+    <div class="slide" style="background-image: url('images/sala.jpg');"></div>
+    <div class="slide" style="background-image: url('images/pappardelle.jpg');"></div>
+    <div class="slide" style="background-image: url('images/sala-murale.jpg');"></div>
+    <div class="slide" style="background-image: url('images/affettati.jpg');"></div>
+  </div>
+  <div class="hero-inner">
+    <span class="eyebrow su-scuro">Cucina tradizionale dal cuore</span>
+    <h1>La Piccola<br>Osteria</h1>
+    <p class="luogo">Nel cuore di Rovigo</p>
+    <div class="azioni">
+      <a href="tel:+393515194009" class="btn btn-primario">Prenota un tavolo</a>
+      <a href="storia.html" class="btn btn-contorno">La nostra storia</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESENTAZIONE ============ -->
+<section class="fondo-beige">
+  <div class="wrap center">
+    <span class="eyebrow">Benvenuti</span>
+    <h2 class="sezione-titolo">Una tavola, come a casa</h2>
+    <div class="fregio"><span class="rombo"></span></div>
+    <div class="intro-testo" style="max-width: 660px; margin: 0 auto;">
+      <p class="prima">La Piccola Osteria nasce dalla passione per la cucina genuina e per l'accoglienza autentica. Tra le mura calde del nostro locale a Rovigo, ogni piatto racconta una storia fatta di ingredienti scelti, ricette di una volta e tanta cura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FASCIA MENÙ ============ -->
+<section class="fondo-nero center">
+  <div class="wrap">
+    <span class="eyebrow su-scuro">Il nostro menù</span>
+    <h2 class="sezione-titolo">Scopri i nostri piatti</h2>
+    <div class="fregio"><span class="rombo"></span></div>
+    <p class="testo-tenue" style="max-width: 480px; margin: 0 auto; color: rgba(251,246,236,0.82);">Sfoglia il menù completo dell'osteria e ordina comodamente online.</p>
+    <div style="margin-top: 1.8rem;">
+      <a href="https://www.jmenu.it/ordina-online-la-piccola-osteria-asporto-consegna-rovigo/" target="_blank" rel="noopener" class="btn btn-oro">Guarda il menù</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECIALITÀ / HIGHLIGHTS ============ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Cosa ci rende speciali</span>
+      <h2 class="sezione-titolo">L'osteria in tre parole</h2>
+      <div class="fregio"><span class="rombo"></span></div>
+    </div>
+    <div class="griglia-3" style="margin-top: 2.6rem;">
+      <article class="scheda reveal">
+        <div class="ph ha-foto"><img src="images/pappardelle.jpg" alt="Pappardelle al ragù"></div>
+        <h3>La Cucina</h3>
+        <p>Ricette della tradizione, materie prime del territorio e il gusto autentico di una volta.</p>
+      </article>
+      <article class="scheda reveal">
+        <div class="ph ha-foto"><img src="images/affettati.jpg" alt="Tagliere di affettati"></div>
+        <h3>I Sapori</h3>
+        <p>Salumi, antipasti e specialità scelte con cura per iniziare al meglio.</p>
+      </article>
+      <article class="scheda reveal">
+        <div class="ph ha-foto"><img src="images/sala-murale.jpg" alt="L'ambiente accogliente dell'osteria"></div>
+        <h3>L'Accoglienza</h3>
+        <p>Un ambiente caldo e familiare dove sentirsi sempre i benvenuti.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERIA TEASER ============ -->
+<section class="fondo-nero">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow su-scuro">In immagini</span>
+      <h2 class="sezione-titolo">Uno sguardo all'osteria</h2>
+      <div class="fregio"><span class="rombo"></span></div>
+    </div>
+    <div class="galleria" style="margin-top: 2.4rem;">
+      <div class="ph scuro ha-foto larga"><img src="images/sala.jpg" alt="La sala"></div>
+      <div class="ph scuro ha-foto"><img src="images/gnocchi.jpg" alt="Gnocchi"></div>
+      <div class="ph scuro ha-foto"><img src="images/pappardelle.jpg" alt="Pappardelle al ragù"></div>
+      <div class="ph scuro ha-foto"><img src="images/affettati.jpg" alt="Tagliere di affettati"></div>
+      <div class="ph scuro ha-foto"><img src="images/titolari.jpg" alt="Le titolari"></div>
+      <div class="ph scuro ha-foto larga"><img src="images/sala-murale.jpg" alt="La sala con il murale"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECENSIONI ============ -->
+<section class="fondo-beige">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Le parole dei nostri ospiti</span>
+      <h2 class="sezione-titolo">Recensioni</h2>
+      <div class="fregio"><span class="rombo"></span></div>
+    </div>
+    <div class="griglia-recensioni" style="margin-top: 2.4rem;">
+      <div class="recensione reveal">
+        <div class="stelle">★★★★★</div>
+        <blockquote>Bel locale, piccolo, molto curato fin nei minimi dettagli. Poche cose, fatte bene, con ingredienti di qualità. Servizio cordiale, attento e mai invadente. Ottima esperienza. Torneremo.</blockquote>
+        <div class="autore">— Lorenzo</div>
+      </div>
+      <div class="recensione reveal">
+        <div class="stelle">★★★★★</div>
+        <blockquote>Durante la cena ho pensato che, tornando da queste parti, sarei sicuramente venuto a cena qui. Dopo il dolce ho deciso che tornerò appositamente per riassaporare le delizie proposte. Ambiente molto gradevole e servizio impeccabile. Eccellente in tutto.</blockquote>
+        <div class="autore">— Marco</div>
+      </div>
+      <div class="recensione reveal">
+        <div class="stelle">★★★★★</div>
+        <blockquote>Bellissima scoperta: appena arrivati ci viene offerto un aperitivo con due stuzzichini deliziosi alle cipolle caramellate. Taglieri di formaggi e affettati con tigelle e gnocco fritto: tutto strepitoso! Personale gentilissimo, locale piccolo ma curato e parcheggio comodo. Consigliatissimo.</blockquote>
+        <div class="autore">— Simone</div>
+      </div>
+    </div>
+    <div class="center" style="margin-top: 2.6rem;">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJx1IvjLr5fkcRIJbWQx-Od5Y" target="_blank" rel="noopener" class="btn btn-contorno-scuro"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 17.3l-5.4 3.3 1.5-6.1L3 10.3l6.2-.5L12 4l2.8 5.8 6.2.5-4.9 4.2 1.5 6.1z"/></svg>Lascia una recensione su Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA PRENOTAZIONE ============ -->
+<section class="fondo-rosso banda-cta">
+  <div class="wrap">
+    <span class="eyebrow su-scuro">Ti aspettiamo</span>
+    <h2>Prenota il tuo tavolo</h2>
+    <p class="testo-tenue" style="max-width: 520px; margin: 0 auto;">Per una cena tra amici o in famiglia, chiamaci o scrivici su WhatsApp. Saremo lieti di accoglierti.</p>
+    <div class="azioni">
+      <a href="tel:+393515194009" class="btn btn-oro">Chiama ora</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FASCIA MAPPA CLICCABILE ============ -->
+<a class="mappa-fascia" href="https://maps.app.goo.gl/ofAdSpbQzZajqd6y9" target="_blank" rel="noopener" aria-label="Apri La Piccola Osteria in Google Maps">
+  <iframe
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://maps.google.com/maps?q=Via%20Luigi%20Einaudi%2039%2C%2045100%20Rovigo%20RO&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    title="Mappa — La Piccola Osteria, Via Luigi Einaudi 39, Rovigo"></iframe>
+  <span class="mappa-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Via Luigi Einaudi 39 · Apri in Google Maps</span>
+</a>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand-f">La Piccola Osteria<small>Rovigo</small></div>
+    <nav class="f-link">
+      <a href="index.html">Home</a>
+      <a href="storia.html">La Nostra Storia</a>
+      <a href="contatti.html">Dove Siamo</a>
+    </nav>
+    <p class="f-info">Via Luigi Einaudi, 39 · 45100 Rovigo (RO) · 351 519 4009</p>
+    <p class="f-copy">© 2026 La Piccola Osteria · Tutti i diritti riservati</p>
+  </div>
+</footer>
+
+<!-- ============ BARRA PRENOTAZIONE FISSA (mobile) ============ -->
+<div class="barra-prenota">
+  <a href="tel:+393515194009" class="chiama">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+    Chiama
+  </a>
+</div>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
