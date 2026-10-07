@@ -689,3 +689,50 @@ section { padding: 64px 0; }
   .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.in { opacity: 1; transform: none; }
 }
+
+a{color:var(--rosso)}a:hover{color:var(--rosso-scuro)}
+.brand,.brand:hover{color:var(--crema)}
+.footer .f-link a{color:var(--beige)}.footer .f-link a:hover{color:var(--oro-chiaro)}
+.mobile-menu a,.mobile-menu a:hover{color:var(--crema)}.mobile-menu a[aria-current="page"]{color:var(--oro-chiaro)}
+.barra-prenota .chiama,.barra-prenota .chiama:hover{color:var(--crema)}
+.btn-primario:hover{color:var(--crema)}.btn-oro:hover{color:var(--nero)}.btn-contorno:hover{color:var(--crema)}.btn-contorno-scuro:hover{color:var(--crema)}
+.nav-prenota:hover{color:var(--nero)}.nav-recensione:hover{color:var(--oro-chiaro)}.mappa-badge:hover{color:var(--rosso)}
+.nav-links a{white-space:nowrap}
+@media (min-width:760px) and (max-width:1099px){.nav-recensione{display:none}.nav-right{gap:1.4rem}.nav-links{gap:1.3rem}}
+/* Footer legale */
+.footer .f-info a{color:var(--beige);text-decoration:none}
+.footer .f-copy{line-height:1.6;max-width:720px;margin-left:auto;margin-right:auto}
+.f-legal{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin-top:14px;font-size:0.92rem}
+.f-legal span{color:rgba(243,234,218,0.35)}
+.f-legal a,.f-legal button{color:var(--beige);text-decoration:none;background:none;border:0;padding:6px 0;font:inherit;cursor:pointer;opacity:0.85}
+.f-legal a:hover,.f-legal button:hover{color:var(--oro-chiaro);opacity:1}
+/* Pagine legali */
+.legale{max-width:760px}
+.legale h2{font-family:var(--testo-font);font-size:1.02rem;letter-spacing:0.12em;color:var(--rosso);font-weight:600;margin:2.4em 0 0.8em;padding-top:1.4em;border-top:1px solid var(--beige-scuro)}
+.legale h2:first-child{margin-top:0;padding-top:0;border-top:0}
+.legale h3{font-size:1.35rem;margin:1.6em 0 0.5em;color:var(--nero)}
+.legale p,.legale li{font-size:1.05rem;line-height:1.7}
+.legale ul{padding-left:1.2em;margin:0 0 1em}.legale li{margin-bottom:0.3em}
+.legale a{color:var(--rosso);word-break:break-word}
+/* Mappa con consenso */
+.mappa-box{position:relative;aspect-ratio:16/10;border-radius:3px;overflow:hidden;border:1px solid rgba(126,34,48,0.2)}
+.mappa-box .mappa-ph{position:absolute;inset:0;width:100%;height:100%;min-height:0;aspect-ratio:auto;border:0}
+@media (min-width:760px){.contatti-grid .mappa-box{aspect-ratio:auto;height:100%;min-height:460px}}
+.mappa-consenso{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;text-align:center;background-color:var(--nero-morbido);background-image:repeating-linear-gradient(45deg,transparent,transparent 11px,rgba(205,164,92,0.07) 11px,rgba(205,164,92,0.07) 22px);color:var(--crema)}
+.mappa-consenso p{margin:0;max-width:440px;font-size:1.05rem;color:rgba(251,246,236,0.88)}
+.mc-azioni{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.mappa-fascia{cursor:default}
+.mappa-link{position:absolute;inset:0;z-index:1}
+.mappa-fascia:not(.map-on) .mappa-link,.mappa-fascia:not(.map-on) .mappa-badge{display:none}
+[data-map].map-on .mappa-consenso{display:none}
+/* Banner cookie */
+.cookie-banner{position:fixed;z-index:100;left:12px;right:12px;bottom:calc(var(--bar-h) + 12px);max-width:520px;background:var(--nero);color:var(--crema);border:1px solid rgba(205,164,92,0.5);border-top:3px solid var(--oro);border-radius:4px;padding:24px 22px 20px;box-shadow:0 18px 48px rgba(0,0,0,0.4)}
+.cookie-banner[hidden]{display:none}
+.cookie-banner h2{font-size:1.6rem;color:var(--crema);margin:0 28px 10px 0}
+.cookie-banner p{font-size:0.98rem;line-height:1.55;color:rgba(251,246,236,0.85);margin:0 0 18px}
+.cookie-banner p a{color:var(--oro-chiaro)}
+.cb-azioni{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cb-azioni .btn{padding:13px 16px}
+.cb-x{position:absolute;top:10px;right:10px;width:44px;height:44px;background:none;border:0;color:var(--beige);font-size:1.6rem;line-height:1;cursor:pointer}
+.cb-x:hover{color:var(--oro-chiaro)}
+@media (min-width:760px){.cookie-banner{left:24px;right:auto;bottom:24px}}

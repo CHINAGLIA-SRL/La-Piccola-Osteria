@@ -8,6 +8,9 @@ production/
 ├── index.html        ← Home
 ├── storia.html       ← La Nostra Storia
 ├── contatti.html     ← Dove Siamo (mappa, orari, contatti)
+├── privacy.html      ← Privacy Policy
+├── cookie.html       ← Cookie Policy
+├── consent.js        ← Banner cookie + caricamento mappa con consenso
 ├── styles.css        ← Foglio di stile condiviso
 ├── favicon.svg       ← Icona del sito
 ├── robots.txt
@@ -29,5 +32,4 @@ Nessun comando di build, nessun framework: lasciare i campi "Build Command" e "O
 - Recensione Google: search.google.com/local/writereview?placeid=ChIJx1IvjLr5fkcRIJbWQx-Od5Y
 
 ## Da completare quando disponibili
-- QR del menù (riquadro segnaposto nella Home, sezione "Il nostro menù")
 - Testo esteso della storia (pagina La Nostra Storia)

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La Piccola Osteria — Rovigo</title>
 <meta name="description" content="La Piccola Osteria a Rovigo — cucina tradizionale in un'atmosfera calda e accogliente. Prenota il tuo tavolo.">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="restaurant">
 <meta property="og:title" content="La Piccola Osteria — Rovigo">
 <meta property="og:description" content="Cucina tradizionale in un'atmosfera calda e accogliente, nel cuore di Rovigo. Prenota il tuo tavolo.">
 <meta property="og:image" content="images/sala.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#1E1916">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -173,14 +173,12 @@
 </section>
 
 <!-- ============ FASCIA MAPPA CLICCABILE ============ -->
-<a class="mappa-fascia" href="https://maps.app.goo.gl/ofAdSpbQzZajqd6y9" target="_blank" rel="noopener" aria-label="Apri La Piccola Osteria in Google Maps">
-  <iframe
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://maps.google.com/maps?q=Via%20Luigi%20Einaudi%2039%2C%2045100%20Rovigo%20RO&t=&z=15&ie=UTF8&iwloc=&output=embed"
-    title="Mappa — La Piccola Osteria, Via Luigi Einaudi 39, Rovigo"></iframe>
-  <span class="mappa-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Via Luigi Einaudi 39 · Apri in Google Maps</span>
-</a>
+<div class="mappa-fascia" data-map>
+  <iframe data-src="https://maps.google.com/maps?q=Via%20Luigi%20Einaudi%2039%2C%2045100%20Rovigo%20RO&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa — La Piccola Osteria, Via Luigi Einaudi 39, Rovigo"></iframe>
+  <a class="mappa-link" href="https://maps.app.goo.gl/ofAdSpbQzZajqd6y9" target="_blank" rel="noopener" aria-label="Apri La Piccola Osteria in Google Maps"></a>
+  <a class="mappa-badge" href="https://maps.app.goo.gl/ofAdSpbQzZajqd6y9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Via Luigi Einaudi 39 · Apri in Google Maps</a>
+  <div class="mappa-consenso"><p>La mappa è fornita da Google Maps, che può installare cookie di terze parti.</p><div class="mc-azioni"><button type="button" class="btn btn-oro" data-show-map>Mostra mappa</button><a href="https://maps.app.goo.gl/ofAdSpbQzZajqd6y9" target="_blank" rel="noopener" class="btn btn-contorno">Apri in Google Maps</a></div></div>
+</div>
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
@@ -191,8 +189,9 @@
       <a href="storia.html">La Nostra Storia</a>
       <a href="contatti.html">Dove Siamo</a>
     </nav>
-    <p class="f-info">Via Luigi Einaudi, 39 · 45100 Rovigo (RO) · 351 519 4009</p>
-    <p class="f-copy">© 2026 La Piccola Osteria · Tutti i diritti riservati</p>
+    <p class="f-info"><a href="tel:+393515194009">351 519 4009</a></p>
+    <p class="f-copy">© 2026 La Piccola Osteria S.n.c. di Inzitari Novella e Pellegrini Margherita · P.IVA 01584180291 · Via Luigi Einaudi, 39 · 45100 Rovigo (RO)</p>
+    <nav class="f-legal"><a href="privacy.html">Privacy Policy</a><span>·</span><a href="cookie.html">Cookie Policy</a><span>·</span><button type="button" data-cookie-prefs>Preferenze cookie</button></nav>
   </div>
 </footer>
 
@@ -212,5 +211,6 @@
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
+<script src="consent.js"></script>
 </body>
 </html>
